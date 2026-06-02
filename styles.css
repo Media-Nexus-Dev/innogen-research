@@ -477,3 +477,20 @@ img { max-width: 100%; display: block; }
   .section { padding: 60px 0; }
   .hero__cta, .newsletter__form { flex-direction: column; }
 }
+
+/* ---------------- Promo strip (service highlights) ---------------- */
+.promo-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 30px 0; background: #fff; }
+.promo-strip__grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.promo-strip__item { display: flex; align-items: center; gap: 16px; padding: 6px 28px; }
+.promo-strip__item + .promo-strip__item { border-left: 1px solid var(--border); }
+.promo-strip__item .ico { color: var(--text-dark); flex-shrink: 0; }
+.promo-strip__item h4 { font-family: var(--font-head); font-size: 17px; font-weight: 700; color: var(--text-dark); margin: 0 0 4px; }
+.promo-strip__item p { font-size: 13px; color: var(--text-muted); margin: 0; }
+@media (max-width: 880px) {
+  .promo-strip__grid { grid-template-columns: 1fr 1fr; gap: 22px 0; }
+  .promo-strip__item:nth-child(3) { border-left: none; }
+}
+@media (max-width: 600px) {
+  .promo-strip__grid { grid-template-columns: 1fr; gap: 22px; }
+  .promo-strip__item { border-left: none !important; justify-content: center; }
+}
