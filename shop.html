@@ -45,19 +45,74 @@
   <!-- ===== Catalog ===== -->
   <section class="section section--light">
     <div class="container">
-      <div class="filters">
-        <button class="filter-pill is-active">All</button>
-        <button class="filter-pill">Anti-Aging</button>
-        <button class="filter-pill">Energy</button>
-        <button class="filter-pill">Fat Loss</button>
-        <button class="filter-pill">Growth Hormone</button>
-        <button class="filter-pill">Healing</button>
-        <button class="filter-pill">Hormones</button>
-        <button class="filter-pill">Immune</button>
-        <button class="filter-pill">Mood</button>
-        <button class="filter-pill">Skincare</button>
-      </div>
-      <div class="products-grid">
+      <div class="shop-layout">
+
+        <!-- Sidebar filters -->
+        <aside class="shop-sidebar">
+          <div class="filter-block">
+            <div class="filter-search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+              <input type="text" placeholder="Search peptides..." />
+            </div>
+          </div>
+
+          <div class="filter-block">
+            <h4 class="filter-title">Category</h4>
+            <ul class="filter-list">
+              <li><label><input type="checkbox" checked /> All <span>6</span></label></li>
+              <li><label><input type="checkbox" /> Anti-Aging <span>1</span></label></li>
+              <li><label><input type="checkbox" /> Energy <span>1</span></label></li>
+              <li><label><input type="checkbox" /> Fat Loss <span>1</span></label></li>
+              <li><label><input type="checkbox" /> Growth Hormone <span>0</span></label></li>
+              <li><label><input type="checkbox" /> Healing <span>1</span></label></li>
+              <li><label><input type="checkbox" /> Immune <span>1</span></label></li>
+              <li><label><input type="checkbox" /> Peptide Blend <span>2</span></label></li>
+              <li><label><input type="checkbox" /> Skincare <span>1</span></label></li>
+            </ul>
+          </div>
+
+          <div class="filter-block">
+            <h4 class="filter-title">Price</h4>
+            <input type="range" class="filter-range" min="0" max="300" value="300" />
+            <div class="filter-range__labels"><span>$0</span><span>$300</span></div>
+          </div>
+
+          <div class="filter-block">
+            <h4 class="filter-title">Availability</h4>
+            <ul class="filter-list">
+              <li><label><input type="checkbox" checked /> In Stock <span>6</span></label></li>
+              <li><label><input type="checkbox" /> Pre-Order <span>0</span></label></li>
+            </ul>
+          </div>
+
+          <div class="filter-block">
+            <h4 class="filter-title">Quality</h4>
+            <ul class="filter-list">
+              <li><label><input type="checkbox" /> 99%+ Purity <span>6</span></label></li>
+              <li><label><input type="checkbox" /> COA Available <span>6</span></label></li>
+            </ul>
+          </div>
+
+          <div class="filter-actions">
+            <a href="#" class="btn btn--primary btn--sm">Apply Filters</a>
+            <a href="shop.html" class="btn--text">Clear all</a>
+          </div>
+        </aside>
+
+        <!-- Products -->
+        <div class="shop-main">
+          <div class="shop-toolbar">
+            <span class="shop-toolbar__count">Showing <strong>6</strong> of 6 results</span>
+            <label class="shop-sort">Sort by
+              <select>
+                <option>Latest</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Best Selling</option>
+              </select>
+            </label>
+          </div>
+          <div class="products-grid">
         <article class="product-card">
           <a href="product.html" class="product-card__img"><img src="https://innogenresearch.ca/wp-content/uploads/elementor/thumbs/SNAP-8-IR-rlr92g9wo14lnr9mmqcjg2tzmzo7p2jpc8779kb5hk.jpeg" alt="SNAP-8 - IR" /></a>
           <div class="product-card__body">
@@ -106,6 +161,9 @@
             <div class="product-card__actions"><a href="#" class="btn btn--primary btn--sm">Add to cart</a><a href="product.html" class="btn--text">View Product &rarr;</a></div>
           </div>
         </article>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
