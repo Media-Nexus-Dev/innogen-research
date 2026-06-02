@@ -272,7 +272,7 @@ img { max-width: 100%; display: block; }
   background: var(--blue-soft);
   color: var(--text-muted);
 }
-.product-card__body { padding: 20px 22px 24px; display: flex; flex-direction: column; flex: 1; background: var(--navy-deep); }
+.product-card__body { padding: 20px 22px 24px; display: flex; flex-direction: column; flex: 1; background: #1d3b59; }
 .product-card__cat { font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 600; }
 .product-card__row { display: flex; justify-content: space-between; align-items: baseline; margin: 8px 0 6px; gap: 10px; }
 .product-card__name { font-family: var(--font-head); font-size: 22px; color: #fff; font-weight: 700; }
