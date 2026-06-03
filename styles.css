@@ -123,6 +123,7 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
 }
 .brand { display: flex; align-items: center; gap: 10px; color: #fff; }
+.brand__logo { height: 40px; width: auto; display: block; }
 .brand__mark {
   width: 30px; height: 30px;
   display: grid; place-items: center;
