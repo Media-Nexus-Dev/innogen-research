@@ -265,6 +265,42 @@ var wc_country_select_params = {"countries":"{\"AF\":[],\"AL\":{\"AL-01\":\"Bera
   #ir-rnav .btn--light { background: #fff; color: #0a4b78; }
   #ir-rnav .btn--light:hover { background: #f7fafd; }
   @media (max-width: 880px) { #ir-rnav .nav__menu { display: none; } }
+
+  /* Hide the broken Elementor newsletter + footer container */
+  .elementor-element-5a807041 { display: none !important; }
+  /* Scoped redesign newsletter + footer */
+  #ir-rfooter .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+  #ir-rfooter a { text-decoration: none; color: inherit; }
+  #ir-rfooter .newsletter { background: #07192b; color: #fff; padding: 54px 0; font-family: 'Inter', sans-serif; }
+  #ir-rfooter .newsletter__inner { display: flex; justify-content: space-between; align-items: center; gap: 30px; flex-wrap: wrap; }
+  #ir-rfooter .newsletter h3 { color: #fff; font-size: 24px; font-family: 'Playfair Display', serif; }
+  #ir-rfooter .newsletter p { color: #9fb0c4; font-size: 14px; margin-top: 6px; }
+  #ir-rfooter .newsletter__form { display: flex; gap: 10px; }
+  #ir-rfooter .newsletter__form input { padding: 13px 18px; border-radius: 8px; border: 1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.06); color: #fff; font-size: 14px; min-width: 260px; }
+  #ir-rfooter .newsletter__form input::placeholder { color: rgba(255,255,255,.5); }
+  #ir-rfooter .btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; padding: 14px 30px; border-radius: 9999px; border: 1.5px solid transparent; cursor: pointer; }
+  #ir-rfooter .btn--primary { background: #0a4b78; color: #fff; }
+  #ir-rfooter .footer { background: #07192b; color: #9fb0c4; padding: 60px 0 0; font-family: 'Inter', sans-serif; }
+  #ir-rfooter .footer__grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.4fr; gap: 40px; padding-bottom: 44px; }
+  #ir-rfooter .brand { display: flex; align-items: center; gap: 10px; color: #fff; }
+  #ir-rfooter .brand__mark { width: 30px; height: 30px; display: grid; place-items: center; }
+  #ir-rfooter .brand__mark svg { width: 26px; height: 26px; }
+  #ir-rfooter .brand__text { display: flex; flex-direction: column; line-height: 1; }
+  #ir-rfooter .brand__text strong { font-family: 'Playfair Display', serif; font-size: 18px; letter-spacing: 2px; font-weight: 600; }
+  #ir-rfooter .brand__text span { font-size: 8px; letter-spacing: 3px; color: #4cb8e0; text-transform: uppercase; margin-top: 3px; }
+  #ir-rfooter .footer__brand .brand { margin-bottom: 16px; }
+  #ir-rfooter .footer__brand p { font-size: 13px; line-height: 1.7; margin-bottom: 16px; }
+  #ir-rfooter .footer__brand .contact { font-size: 13px; line-height: 2; }
+  #ir-rfooter .footer__col h4 { color: #fff; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 18px; font-weight: 700; }
+  #ir-rfooter .footer__col ul { list-style: none; margin: 0; padding: 0; }
+  #ir-rfooter .footer__col li { margin-bottom: 11px; }
+  #ir-rfooter .footer__col a { font-size: 13px; transition: color .2s; }
+  #ir-rfooter .footer__col a:hover { color: #fff; }
+  #ir-rfooter .footer__disclaimer h4 { color: #fff; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; font-weight: 700; }
+  #ir-rfooter .footer__disclaimer .box { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; padding: 16px; font-size: 12px; line-height: 1.7; }
+  #ir-rfooter .footer__bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 22px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; font-size: 12px; }
+  #ir-rfooter .footer__bottom .links { display: flex; gap: 24px; }
+  @media (max-width: 880px) { #ir-rfooter .footer__grid { grid-template-columns: 1fr 1fr; } #ir-rfooter .newsletter__form { flex-direction: column; } }
 </style>
 </head>
 <body class="home wp-singular page-template page-template-elementor_canvas page page-id-21630 wp-embed-responsive wp-theme-minimog wp-child-theme-minimog-child theme-minimog woocommerce-js desktop desktop-menu header-sticky-enable page-has-mobile-tabs page-has-no-sidebar page-blocks-style-normal title-bar-standard-01 title-bar-has-post-title woocommerce elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-21630 cart-is-empty e--ua-blink e--ua-chrome e--ua-webkit loaded" data-elementor-device-mode="widescreen">
@@ -1640,6 +1676,42 @@ In preclinical and experimental models, KLOW has been associated with accelerate
 				</div>
 				</div>
 				</div>
+<!-- ===== Innogen redesign newsletter + footer ===== -->
+<div id="ir-rfooter">
+  <section class="newsletter">
+    <div class="container newsletter__inner">
+      <div>
+        <h3>Stay Current with Research</h3>
+        <p>New peptides, batch releases, and peptide research updates.</p>
+      </div>
+      <form class="newsletter__form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your Email" />
+        <button class="btn btn--primary">Subscribe &rarr;</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">
+            <span class="brand__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#4cb8e0" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="3.5" r="1.6"/><circle cx="12" cy="20.5" r="1.6"/><circle cx="4.5" cy="7.7" r="1.6"/><circle cx="19.5" cy="7.7" r="1.6"/><circle cx="4.5" cy="16.3" r="1.6"/><circle cx="19.5" cy="16.3" r="1.6"/></svg></span>
+            <span class="brand__text"><strong>INNOGEN</strong><span>Peptides</span></span>
+          </a>
+          <p>Canada's premier source for pharmaceutical-grade research peptides. Purity you can measure. Quality you can trust.</p>
+          <div class="contact">&#9993; info@innogenresearch.ca<br>&#9742; +1 (123) 456-7890<br>&#9873; Canada — Nationwide Shipping</div>
+        </div>
+        <div class="footer__col"><h4>Top Products</h4><ul><li><a href="shop.html">SNAP-8</a></li><li><a href="shop.html">SS-31</a></li><li><a href="shop.html">KPV</a></li><li><a href="shop.html">Tirzepatide</a></li><li><a href="shop.html">KLOW</a></li><li><a href="shop.html">GLOW</a></li><li><a href="shop.html">View All</a></li></ul></div>
+        <div class="footer__col"><h4>Quick Links</h4><ul><li><a href="about.html">About Innogen</a></li><li><a href="#">Quality Assurance</a></li><li><a href="index.html#process">Research Process</a></li><li><a href="shop.html">COA Library</a></li><li><a href="#">Blog &amp; Research</a></li><li><a href="about.html">Contact Us</a></li></ul></div>
+        <div class="footer__disclaimer"><h4>Research Disclaimer</h4><div class="box">All products sold by Innogen Research are intended for laboratory research use only. They are not for human consumption, diagnostic, or therapeutic applications. By purchasing, you confirm you are a qualified researcher and will use products in compliance with all applicable regulations.</div></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Innogen Research Inc. All rights reserved.</span>
+        <div class="links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Shipping Policy</a><a href="#">Return Policy</a></div>
+      </div>
+    </div>
+  </footer>
+</div>
 		<script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/minimog-child/*","/wp-content/themes/minimog/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
