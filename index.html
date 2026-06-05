@@ -244,8 +244,47 @@ var wc_country_select_params = {"countries":"{\"AF\":[],\"AL\":{\"AL-01\":\"Bera
 	color: #ffffff;
 }
 </style>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<!-- ===== Innogen redesign header (grafted to match shop/category/about/product) ===== -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style id="ir-redesign-nav-css">
+  /* Hide the broken Elementor/WooCommerce header */
+  .innogen-header, .elementor-sticky__spacer { display: none !important; }
+  /* Scoped redesign nav — literal values so it needs no external token sheet */
+  #ir-rnav.nav { position: sticky; top: 0; z-index: 99999; background: #07192b; box-shadow: 0 10px 34px rgba(7,25,43,.18); padding: 14px 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  #ir-rnav .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+  #ir-rnav .nav__inner { display: flex; align-items: center; justify-content: space-between; }
+  #ir-rnav .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; }
+  #ir-rnav .brand__logo { height: 40px; width: auto; display: block; }
+  #ir-rnav .nav__menu { display: flex; gap: 32px; }
+  #ir-rnav .nav__menu a { color: rgba(255,255,255,.85); font-size: 14px; font-weight: 500; text-decoration: none; transition: color .2s; }
+  #ir-rnav .nav__menu a:hover { color: #fff; }
+  #ir-rnav .nav__right { display: flex; align-items: center; gap: 20px; }
+  #ir-rnav .signin { color: rgba(255,255,255,.9); font-size: 14px; font-weight: 500; text-decoration: none; }
+  #ir-rnav .btn { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; padding: 9px 16px; border-radius: 9999px; border: 1.5px solid transparent; cursor: pointer; text-decoration: none; transition: all .2s ease; }
+  #ir-rnav .btn--light { background: #fff; color: #0a4b78; }
+  #ir-rnav .btn--light:hover { background: #f7fafd; }
+  @media (max-width: 880px) { #ir-rnav .nav__menu { display: none; } }
+</style>
+</head>
 <body class="home wp-singular page-template page-template-elementor_canvas page page-id-21630 wp-embed-responsive wp-theme-minimog wp-child-theme-minimog-child theme-minimog woocommerce-js desktop desktop-menu header-sticky-enable page-has-mobile-tabs page-has-no-sidebar page-blocks-style-normal title-bar-standard-01 title-bar-has-post-title woocommerce elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-21630 cart-is-empty e--ua-blink e--ua-chrome e--ua-webkit loaded" data-elementor-device-mode="widescreen">
+<!-- ===== Innogen redesign header ===== -->
+<nav id="ir-rnav" class="nav nav--solid">
+  <div class="container nav__inner">
+    <a href="index.html" class="brand"><img src="https://innogenresearch.ca/wp-content/uploads/2026/05/innogen-logo-white-1-1.png" alt="Innogen Peptides" class="brand__logo"></a>
+    <div class="nav__menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="category.html">Category</a>
+      <a href="about.html">About</a>
+      <a href="about.html">FAQs</a>
+    </div>
+    <div class="nav__right">
+      <a href="#" class="signin">Sign In</a>
+      <a href="shop.html" class="btn btn--light btn--sm">Shop Now</a>
+    </div>
+  </div>
+</nav>
 			<div data-elementor-type="wp-page" data-elementor-id="21630" class="elementor elementor-21630" data-elementor-post-type="page">
 				<div class="elementor-element elementor-element-2dcc7927 innogen-header e-flex e-con-boxed e-con e-parent elementor-sticky elementor-sticky--active elementor-section--handles-inside" data-id="2dcc7927" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_effects_offset&quot;:80,&quot;sticky_on&quot;:[&quot;widescreen&quot;,&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet_extra&quot;,&quot;tablet&quot;,&quot;mobile_extra&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}" style="position: fixed; width: 2545px; margin-top: 0px; margin-bottom: 0px; top: 0px;">
 					<div class="e-con-inner">
