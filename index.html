@@ -265,6 +265,12 @@ var wc_country_select_params = {"countries":"{\"AF\":[],\"AL\":{\"AL-01\":\"Bera
   #ir-rnav .btn--light { background: #fff; color: #0a4b78; }
   #ir-rnav .btn--light:hover { background: #f7fafd; }
   @media (max-width: 880px) { #ir-rnav .nav__menu { display: none; } }
+  #ir-rnav .nav__search { display: flex; align-items: center; gap: 4px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); border-radius: 9999px; padding: 4px 4px 4px 14px; }
+  #ir-rnav .nav__search input { background: transparent; border: none; outline: none; color: #fff; font-family: 'Inter', sans-serif; font-size: 13px; width: 150px; }
+  #ir-rnav .nav__search input::placeholder { color: rgba(255,255,255,.6); }
+  #ir-rnav .nav__search button { width: 30px; height: 30px; flex-shrink: 0; border: none; border-radius: 50%; background: #0a4b78; color: #fff; display: grid; place-items: center; cursor: pointer; }
+  #ir-rnav .nav__search button:hover { background: #1a7fc1; }
+  @media (max-width: 980px) { #ir-rnav .nav__search { display: none; } }
 
   /* Hide the broken Elementor newsletter + footer container */
   .elementor-element-5a807041 { display: none !important; }
@@ -317,6 +323,10 @@ var wc_country_select_params = {"countries":"{\"AF\":[],\"AL\":{\"AL-01\":\"Bera
       <a href="contact.html">Contact</a>
     </div>
     <div class="nav__right">
+      <form class="nav__search" onsubmit="return false;" role="search">
+        <input type="search" placeholder="Search peptides..." aria-label="Search peptides" />
+        <button type="submit" aria-label="Search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+      </form>
       <a href="#" class="signin">Sign In</a>
       <a href="shop.html" class="btn btn--light btn--sm">Shop Now</a>
     </div>

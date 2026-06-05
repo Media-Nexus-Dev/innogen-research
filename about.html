@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260604" />
+  <link rel="stylesheet" href="styles.css?v=20260606" />
 </head>
 <body>
 
@@ -24,6 +24,10 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="nav__right">
+        <form class="nav__search" onsubmit="return false;" role="search">
+          <input type="search" placeholder="Search peptides..." aria-label="Search peptides" />
+          <button type="submit" aria-label="Search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+        </form>
         <a href="#" class="signin">Sign In</a>
         <a href="shop.html" class="btn btn--light btn--sm">Shop Now</a>
       </div>
@@ -40,21 +44,14 @@
     </div>
   </header>
 
-  <!-- ===== Certifications bar (overlaps hero) ===== -->
-  <div class="container">
-    <div class="certs">
-      <div class="certs__title">
-        <strong>Held to a higher standard</strong>
-        <span>Every batch, independently verified</span>
-      </div>
-      <div class="certs__items">
-        <div class="cert-item"><strong>99%+ HPLC</strong><span>Purity verified</span></div>
-        <div class="cert-item"><strong>Mass Spec</strong><span>Identity confirmed</span></div>
-        <div class="cert-item"><strong>3rd-Party COA</strong><span>Every batch</span></div>
-        <div class="cert-item"><strong>GMP-Aligned</strong><span>Canadian facility</span></div>
-      </div>
+  <!-- ===== Mission statement ===== -->
+  <section class="section mission">
+    <div class="container">
+      <span class="eyebrow">Our Mission</span>
+      <p class="mission__quote" style="margin-top:18px">"To give researchers peptides they never have to second-guess — <span class="accent">verified to 99%+ purity, documented to the batch, and delivered with the rigor science demands.</span>"</p>
+      <div class="mission__by">— The Innogen Research Team</div>
     </div>
-  </div>
+  </section>
 
   <!-- ===== Our Story ===== -->
   <section class="section section--white">
@@ -62,9 +59,9 @@
       <div>
         <span class="eyebrow">Our Story</span>
         <h2>The Standard We Refused to Compromise</h2>
-        <p>Innogen Research was founded on a simple frustration: too many research peptides arrived with inconsistent purity, missing documentation, and no traceability. For serious laboratories, that's unacceptable.</p>
-        <p>So we built a Canadian, GMP-aligned operation where every vial is synthesized via solid-phase peptide synthesis, purified by HPLC, and verified by mass spectrometry — with a third-party Certificate of Analysis available for every single batch.</p>
-        <p>Today, leading institutions across Canada rely on Innogen for peptides they can trust at the bench.</p>
+        <p>Innogen Research began with a frustration shared in labs everywhere: research peptides arriving with inconsistent purity, missing documentation, and no traceability. For serious work, that's a non-starter.</p>
+        <p>So we built a Canadian, GMP-aligned operation around a single promise — that every vial is synthesized, purified, and independently verified before it ever reaches your bench.</p>
+        <p>What started as a small team solving its own problem is now a trusted supplier to laboratories across the country.</p>
         <div style="display:flex;gap:14px;margin-top:24px">
           <a href="shop.html" class="btn btn--primary">Browse Catalog &rarr;</a>
           <a href="contact.html" class="btn btn--outline-dark">Talk to Our Team</a>
@@ -76,60 +73,70 @@
     </div>
   </section>
 
-  <!-- ===== Stats band ===== -->
-  <section class="quality">
-    <div class="container quality__grid">
-      <div>
-        <span class="eyebrow">By the Numbers</span>
-        <h2>A Track Record<br><span class="accent">You Can Verify.</span></h2>
-        <p>Our commitment to quality isn't a slogan — it's measured, documented, and repeated on every order we fulfill.</p>
-        <div class="quality__cta"><a href="shop.html" class="btn btn--light">Browse Catalog</a><a href="contact.html" class="btn btn--outline">Contact Us</a></div>
+  <!-- ===== Timeline / Our Journey ===== -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our Journey</span>
+        <h2>How Innogen Grew</h2>
+        <p>From a single bench to a nationwide standard for research-grade peptides.</p>
       </div>
-      <div class="stats-grid">
-        <div class="stat-box"><div class="num">99%+</div><div class="lbl">Average Purity</div></div>
-        <div class="stat-box"><div class="num">50+</div><div class="lbl">Active Peptides</div></div>
-        <div class="stat-box"><div class="num">100%</div><div class="lbl">COA Verified</div></div>
-        <div class="stat-box"><div class="num">24h</div><div class="lbl">Max Ship Time</div></div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">2023</div>
+          <h4>Founded in Canada</h4>
+          <p>A small group of researchers set out to solve the purity and documentation gaps they kept hitting in their own work.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2024</div>
+          <h4>COA on Every Batch</h4>
+          <p>We made third-party Certificates of Analysis standard — not an upsell — for every product we ship.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2025</div>
+          <h4>GMP-Aligned Facility</h4>
+          <p>Moved synthesis and HPLC purification fully in-house, giving us end-to-end traceability and control.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2026</div>
+          <h4>Trusted Nationwide</h4>
+          <p>Leading institutions across Canada now rely on Innogen for peptides they can verify at the bench.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== How we work / Process ===== -->
-  <section class="section section--light">
+  <!-- ===== Meet the team ===== -->
+  <section class="section section--white">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">How We Work</span>
-        <h2>From Synthesis to Your Lab</h2>
-        <p>A transparent, end-to-end process engineered so that what arrives at your bench is exactly what the label says.</p>
+        <span class="eyebrow">The People Behind the Vials</span>
+        <h2>Meet the Team</h2>
+        <p>Chemists, quality leads, and logistics specialists who treat every order like it's going into their own experiment.</p>
       </div>
-      <div class="steps">
-        <div class="step">
-          <div class="num-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 2v6l-4 9a3 3 0 0 0 3 4h8a3 3 0 0 0 3-4l-4-9V2"/></svg><span class="badge">1</span></div>
-          <h4>Synthesis</h4><p>Solid-phase peptide synthesis under controlled conditions.</p>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-card__photo">AK</div>
+          <div class="team-card__body"><strong>Dr. A. Kovac</strong><span class="role">Founder & Chief Scientist</span><p>Peptide chemist who built Innogen's purity-first synthesis process.</p></div>
         </div>
-        <div class="step">
-          <div class="num-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg><span class="badge">2</span></div>
-          <h4>Purification</h4><p>HPLC purification to a strict 99%+ purity floor.</p>
+        <div class="team-card">
+          <div class="team-card__photo">MR</div>
+          <div class="team-card__body"><strong>M. Reyes</strong><span class="role">Head of Quality</span><p>Owns the COA program and every batch-release decision.</p></div>
         </div>
-        <div class="step">
-          <div class="num-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span class="badge">3</span></div>
-          <h4>Verification</h4><p>Mass spectrometry confirms identity and molecular weight.</p>
+        <div class="team-card">
+          <div class="team-card__photo">TN</div>
+          <div class="team-card__body"><strong>T. Nguyen</strong><span class="role">Lab Operations</span><p>Keeps synthesis, HPLC, and mass-spec running to spec.</p></div>
         </div>
-        <div class="step">
-          <div class="num-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg><span class="badge">4</span></div>
-          <h4>Documentation</h4><p>A third-party Certificate of Analysis for every batch.</p>
-        </div>
-        <div class="step">
-          <div class="num-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7M5.5 18.5a2.5 2.5 0 1 0 0-.1zM18.5 18.5a2.5 2.5 0 1 0 0-.1z"/></svg><span class="badge">5</span></div>
-          <h4>Delivery</h4><p>Cold-chain, discreet shipping nationwide within 24 hours.</p>
+        <div class="team-card">
+          <div class="team-card__photo">SB</div>
+          <div class="team-card__body"><strong>S. Brar</strong><span class="role">Fulfillment & Support</span><p>Makes sure your order ships cold-chain within 24 hours.</p></div>
         </div>
       </div>
-      <div class="process-cta"><a href="shop.html" class="btn btn--primary">See the Catalog &rarr;</a></div>
     </div>
   </section>
 
   <!-- ===== Core Values ===== -->
-  <section class="section section--white">
+  <section class="section section--light">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">What Drives Us</span>
@@ -144,30 +151,20 @@
     </div>
   </section>
 
-  <!-- ===== Testimonials ===== -->
-  <section class="section section--light">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Trusted at the Bench</span>
-        <h2>What Researchers Say</h2>
-        <p>Laboratories across Canada choose Innogen for reproducible results they can stake their work on.</p>
+  <!-- ===== CTA band ===== -->
+  <section class="quality">
+    <div class="container quality__grid">
+      <div>
+        <span class="eyebrow">Work With Us</span>
+        <h2>Ready to Research<br><span class="accent">With Confidence?</span></h2>
+        <p>Browse the catalog or reach out about a custom synthesis request — we typically respond within one business day.</p>
+        <div class="quality__cta"><a href="shop.html" class="btn btn--light">Browse Catalog</a><a href="contact.html" class="btn btn--outline">Contact Us</a></div>
       </div>
-      <div class="testimonials-grid">
-        <div class="testimonial">
-          <div class="testimonial__head"><div class="testimonial__avatar">DR</div><div><strong>Dr. R. Mehta</strong><span style="display:block">University Research Lab</span></div></div>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"The COA for every batch is exactly what our protocols demand. Consistent, documented, and reproducible — Innogen delivers."</p>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial__head"><div class="testimonial__avatar">JL</div><div><strong>J. Laurent</strong><span style="display:block">Biotech Startup</span></div></div>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"Fast Canadian shipping and purity we can actually verify. Switching to Innogen removed a whole category of risk from our work."</p>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial__head"><div class="testimonial__avatar">SC</div><div><strong>Dr. S. Chen</strong><span style="display:block">Independent Researcher</span></div></div>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"Purity you can measure. Highly recommended for anyone who needs research-grade peptides without the guesswork."</p>
-        </div>
+      <div class="stats-grid">
+        <div class="stat-box"><div class="num">99%+</div><div class="lbl">Average Purity</div></div>
+        <div class="stat-box"><div class="num">50+</div><div class="lbl">Active Peptides</div></div>
+        <div class="stat-box"><div class="num">100%</div><div class="lbl">COA Verified</div></div>
+        <div class="stat-box"><div class="num">24h</div><div class="lbl">Max Ship Time</div></div>
       </div>
     </div>
   </section>

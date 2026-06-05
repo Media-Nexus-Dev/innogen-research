@@ -546,6 +546,81 @@ img { max-width: 100%; display: block; }
   .hero__cta, .newsletter__form { flex-direction: column; }
 }
 
+/* ---------------- Header search ---------------- */
+.nav__search {
+  display: flex; align-items: center; gap: 4px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: var(--radius-pill);
+  padding: 4px 4px 4px 14px;
+}
+.nav__search input {
+  background: transparent; border: none; outline: none;
+  color: #fff; font-family: var(--font-body); font-size: 13px; width: 150px;
+}
+.nav__search input::placeholder { color: rgba(255,255,255,0.6); }
+.nav__search button {
+  width: 30px; height: 30px; flex-shrink: 0;
+  border: none; border-radius: 50%;
+  background: var(--blue-primary); color: #fff;
+  display: grid; place-items: center; cursor: pointer;
+  transition: background 0.2s;
+}
+.nav__search button:hover { background: var(--blue-mid); }
+@media (max-width: 1100px) { .nav__search input { width: 110px; } }
+@media (max-width: 980px) { .nav__search { display: none; } }
+
+/* ---------------- About: mission quote ---------------- */
+.mission {
+  background: var(--blue-soft);
+  text-align: center;
+}
+.mission__quote {
+  max-width: 860px; margin: 0 auto;
+  font-family: var(--font-head); font-weight: 600;
+  font-size: 30px; line-height: 1.4; color: var(--navy-deep);
+}
+.mission__quote .accent { color: var(--blue-mid); }
+.mission__by { margin-top: 22px; font-size: 14px; color: var(--text-muted); letter-spacing: 0.4px; }
+
+/* ---------------- About: timeline ---------------- */
+.timeline { max-width: 760px; margin: 0 auto; position: relative; padding-left: 34px; }
+.timeline::before {
+  content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px;
+  width: 2px; background: var(--border);
+}
+.tl-item { position: relative; padding-bottom: 36px; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item::before {
+  content: ""; position: absolute; left: -34px; top: 4px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: #fff; border: 3px solid var(--blue-primary);
+}
+.tl-item .tl-year { font-family: var(--font-head); font-weight: 700; color: var(--blue-mid); font-size: 15px; letter-spacing: 0.5px; }
+.tl-item h4 { font-size: 19px; margin: 4px 0 6px; color: var(--text-dark); }
+.tl-item p { font-size: 14px; }
+
+/* ---------------- About: team ---------------- */
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.team-card {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg);
+  overflow: hidden; text-align: center; box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.team-card__photo {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(150deg, var(--blue-soft) 0%, #d8e6f5 100%);
+  display: grid; place-items: center;
+  font-family: var(--font-head); font-weight: 700; font-size: 36px; color: var(--blue-primary);
+}
+.team-card__body { padding: 20px 18px 24px; }
+.team-card__body strong { display: block; font-size: 16px; color: var(--text-dark); font-family: var(--font-head); }
+.team-card__body .role { display: block; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--blue-mid); margin: 4px 0 10px; font-weight: 600; }
+.team-card__body p { font-size: 13px; }
+@media (max-width: 980px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .team-grid { grid-template-columns: 1fr; } }
+
 /* ---------------- Promo strip (service highlights) ---------------- */
 .promo-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 30px 0; background: #fff; }
 .promo-strip__grid { display: grid; grid-template-columns: repeat(4, 1fr); }
