@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cart — Innogen Research</title>
+  <title>Checkout — Innogen Research</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -37,81 +37,76 @@
   <!-- ===== Page hero ===== -->
   <header class="page-hero">
     <div class="container">
-      <div class="hero-breadcrumb"><a href="index.html">Home</a><span>/</span>Cart</div>
-      <span class="eyebrow" style="color:var(--blue-accent)">Your Order</span>
-      <h1>Shopping Cart</h1>
-      <p>Review your research peptides before checkout. Every order ships with a third-party Certificate of Analysis.</p>
+      <div class="hero-breadcrumb"><a href="index.html">Home</a><span>/</span><a href="cart.html">Cart</a><span>/</span>Checkout</div>
+      <span class="eyebrow" style="color:var(--blue-accent)">Secure Checkout</span>
+      <h1>Checkout</h1>
+      <p>Enter your billing and shipping details to complete your order. All transactions are encrypted and secure.</p>
     </div>
   </header>
 
-  <!-- ===== Cart ===== -->
+  <!-- ===== Checkout ===== -->
   <section class="section section--light">
     <div class="container">
-      <div class="cart-layout">
-        <!-- Items -->
-        <table class="cart-table">
-          <thead>
-            <tr>
-              <th>Product</th>
-              <th class="col-num">Price</th>
-              <th>Quantity</th>
-              <th class="col-num">Subtotal</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="cart-item">
-                  <img src="https://innogenresearch.ca/wp-content/uploads/elementor/thumbs/SNAP-8-IR-rlr92g9wo14lnr9mmqcjg2tzmzo7p2jpc8779kb5hk.jpeg" alt="SNAP-8" />
-                  <div>
-                    <div class="cat">Anti-Aging Peptide</div>
-                    <div class="name">SNAP-8</div>
-                  </div>
-                </div>
-              </td>
-              <td class="col-num">$90.00</td>
-              <td>
-                <div class="cart-qty"><button type="button" aria-label="Decrease">&minus;</button><input type="text" value="1" aria-label="Quantity" /><button type="button" aria-label="Increase">+</button></div>
-              </td>
-              <td class="col-num">$90.00</td>
-              <td><button class="cart-remove" aria-label="Remove SNAP-8">&times;</button></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="cart-item">
-                  <img src="https://innogenresearch.ca/wp-content/uploads/elementor/thumbs/SS-31-IR-rlr8xxnttoxzv7tu0a22ypv8vbxppfm51vc78p09e0.jpeg" alt="SS-31" />
-                  <div>
-                    <div class="cat">Energy Peptide</div>
-                    <div class="name">SS-31</div>
-                  </div>
-                </div>
-              </td>
-              <td class="col-num">$105.00</td>
-              <td>
-                <div class="cart-qty"><button type="button" aria-label="Decrease">&minus;</button><input type="text" value="1" aria-label="Quantity" /><button type="button" aria-label="Increase">+</button></div>
-              </td>
-              <td class="col-num">$105.00</td>
-              <td><button class="cart-remove" aria-label="Remove SS-31">&times;</button></td>
-            </tr>
-          </tbody>
-        </table>
+      <form class="checkout-layout" onsubmit="return false;">
+        <!-- Left: billing + payment -->
+        <div>
+          <!-- Billing details -->
+          <div class="checkout-section">
+            <h3>Billing &amp; Shipping Details</h3>
+            <div class="form-grid">
+              <div class="checkout-field"><label>First name *</label><input type="text" autocomplete="given-name" /></div>
+              <div class="checkout-field"><label>Last name *</label><input type="text" autocomplete="family-name" /></div>
+              <div class="checkout-field full"><label>Institution / Company (optional)</label><input type="text" autocomplete="organization" /></div>
+              <div class="checkout-field full"><label>Street address *</label><input type="text" autocomplete="address-line1" placeholder="House number and street name" /></div>
+              <div class="checkout-field"><label>City *</label><input type="text" autocomplete="address-level2" /></div>
+              <div class="checkout-field"><label>Province *</label>
+                <select>
+                  <option>Ontario</option><option>British Columbia</option><option>Alberta</option><option>Quebec</option><option>Manitoba</option><option>Saskatchewan</option><option>Nova Scotia</option><option>New Brunswick</option><option>Newfoundland and Labrador</option><option>Prince Edward Island</option>
+                </select>
+              </div>
+              <div class="checkout-field"><label>Postal code *</label><input type="text" autocomplete="postal-code" /></div>
+              <div class="checkout-field"><label>Phone *</label><input type="tel" autocomplete="tel" /></div>
+              <div class="checkout-field full"><label>Email address *</label><input type="email" autocomplete="email" /></div>
+              <div class="checkout-field full"><label>Order notes (optional)</label><textarea placeholder="Notes about your order, e.g. special delivery instructions."></textarea></div>
+            </div>
+          </div>
 
-        <!-- Summary -->
+          <!-- Payment -->
+          <div class="checkout-section">
+            <h3>Payment Method</h3>
+            <div class="pay-method is-active">
+              <label><input type="radio" name="pay" checked /> Credit / Debit Card</label>
+              <div class="pay-body">
+                <div class="form-grid">
+                  <div class="checkout-field full"><label>Card number</label><input type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" /></div>
+                  <div class="checkout-field"><label>Expiry (MM/YY)</label><input type="text" placeholder="MM / YY" /></div>
+                  <div class="checkout-field"><label>CVC</label><input type="text" inputmode="numeric" placeholder="CVC" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="pay-method">
+              <label><input type="radio" name="pay" /> Interac e-Transfer</label>
+            </div>
+            <div class="pay-method">
+              <label><input type="radio" name="pay" /> Bank Transfer (EFT)</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: order review -->
         <aside class="cart-summary">
-          <h3>Cart Totals</h3>
-          <div class="line"><span>Subtotal</span><span>$195.00</span></div>
+          <h3>Your Order</h3>
+          <div class="order-line"><span class="ol-name">SNAP-8 <span>&times; 1</span></span><span>$90.00</span></div>
+          <div class="order-line"><span class="ol-name">SS-31 <span>&times; 1</span></span><span>$105.00</span></div>
+          <div class="line" style="margin-top:6px"><span>Subtotal</span><span>$195.00</span></div>
           <div class="line"><span>Shipping</span><span>Free (over $150)</span></div>
           <div class="line"><span>Estimated Tax</span><span>$25.35</span></div>
           <div class="line total"><span>Total</span><span>$220.35</span></div>
-          <a href="checkout.html" class="btn btn--primary">Proceed to Checkout &rarr;</a>
-          <div class="cart-promo">
-            <input type="text" placeholder="Promo code" aria-label="Promo code" />
-            <button class="btn btn--outline-dark btn--sm">Apply</button>
-          </div>
-          <p class="account-meta" style="margin-top:16px;text-align:center"><a href="shop.html" style="color:var(--blue-mid);font-weight:600">&larr; Continue shopping</a></p>
+          <button class="btn btn--primary">Place Order &rarr;</button>
+          <p class="account-meta" style="margin-top:14px;text-align:center">&#128274; Your payment information is encrypted and secure.</p>
+          <p class="account-meta" style="margin-top:6px;text-align:center"><a href="cart.html" style="color:var(--blue-mid);font-weight:600">&larr; Back to cart</a></p>
         </aside>
-      </div>
+      </form>
     </div>
   </section>
 
