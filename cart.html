@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Innogen Research</title>
+  <title>Cart — Innogen Research</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -38,63 +38,80 @@
   <!-- ===== Page hero ===== -->
   <header class="page-hero">
     <div class="container">
-      <div class="hero-breadcrumb"><a href="index.html">Home</a><span>/</span>About</div>
-      <span class="eyebrow" style="color:var(--blue-accent)">About Innogen</span>
-      <h1>Precision Peptides,<br>Built in Canada</h1>
-      <p>Founded by researchers, for researchers. Innogen exists to set a new standard of purity, transparency, and reliability in the research peptide industry.</p>
+      <div class="hero-breadcrumb"><a href="index.html">Home</a><span>/</span>Cart</div>
+      <span class="eyebrow" style="color:var(--blue-accent)">Your Order</span>
+      <h1>Shopping Cart</h1>
+      <p>Review your research peptides before checkout. Every order ships with a third-party Certificate of Analysis.</p>
     </div>
   </header>
 
-  <!-- ===== Our Story ===== -->
-  <section class="section section--white">
-    <div class="container about-split">
-      <div>
-        <span class="eyebrow">Our Story</span>
-        <h2>The Standard We Refused to Compromise</h2>
-        <p>Innogen Research began with a frustration shared in labs everywhere: research peptides arriving with inconsistent purity, missing documentation, and no traceability. For serious work, that's a non-starter.</p>
-        <p>So we built a Canadian, GMP-aligned operation around a single promise — every vial is synthesized, purified by HPLC, and verified by mass spectrometry, with a third-party Certificate of Analysis available for every batch.</p>
-        <p>Today, leading institutions across Canada rely on Innogen for peptides they can trust at the bench.</p>
-        <div style="display:flex;gap:14px;margin-top:24px">
-          <a href="shop.html" class="btn btn--primary">Browse Catalog &rarr;</a>
-          <a href="contact.html" class="btn btn--outline-dark">Talk to Our Team</a>
-        </div>
-      </div>
-      <div class="about-img" style="padding:0;overflow:hidden;min-height:0;aspect-ratio:4/3">
-        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=80" alt="Researcher pipetting samples for batch verification in the Innogen lab" style="display:block;width:100%;height:100%;object-fit:cover" />
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Core Values ===== -->
+  <!-- ===== Cart ===== -->
   <section class="section section--light">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">What Drives Us</span>
-        <h2>Our Core Values</h2>
-        <p>Three principles guide every decision we make — from sourcing raw materials to sealing the final vial.</p>
-      </div>
-      <div class="values-grid">
-        <div class="feature-card"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Uncompromising Purity</h3><p>A 99%+ purity floor on every peptide, verified independently. No exceptions, no shortcuts.</p></div>
-        <div class="feature-card"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Radical Transparency</h3><p>Every batch ships with a third-party COA. You see exactly what you're researching with.</p></div>
-        <div class="feature-card"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></div><h3>Made in Canada</h3><p>Domestic, GMP-aligned manufacturing means full traceability and a supply chain you can audit.</p></div>
-      </div>
-    </div>
-  </section>
+      <div class="cart-layout">
+        <!-- Items -->
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th class="col-num">Price</th>
+              <th>Quantity</th>
+              <th class="col-num">Subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="cart-item">
+                  <img src="https://innogenresearch.ca/wp-content/uploads/elementor/thumbs/SNAP-8-IR-rlr92g9wo14lnr9mmqcjg2tzmzo7p2jpc8779kb5hk.jpeg" alt="SNAP-8" />
+                  <div>
+                    <div class="cat">Anti-Aging Peptide</div>
+                    <div class="name">SNAP-8</div>
+                  </div>
+                </div>
+              </td>
+              <td class="col-num">$90.00</td>
+              <td>
+                <div class="cart-qty"><button type="button" aria-label="Decrease">&minus;</button><input type="text" value="1" aria-label="Quantity" /><button type="button" aria-label="Increase">+</button></div>
+              </td>
+              <td class="col-num">$90.00</td>
+              <td><button class="cart-remove" aria-label="Remove SNAP-8">&times;</button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cart-item">
+                  <img src="https://innogenresearch.ca/wp-content/uploads/elementor/thumbs/SS-31-IR-rlr8xxnttoxzv7tu0a22ypv8vbxppfm51vc78p09e0.jpeg" alt="SS-31" />
+                  <div>
+                    <div class="cat">Energy Peptide</div>
+                    <div class="name">SS-31</div>
+                  </div>
+                </div>
+              </td>
+              <td class="col-num">$105.00</td>
+              <td>
+                <div class="cart-qty"><button type="button" aria-label="Decrease">&minus;</button><input type="text" value="1" aria-label="Quantity" /><button type="button" aria-label="Increase">+</button></div>
+              </td>
+              <td class="col-num">$105.00</td>
+              <td><button class="cart-remove" aria-label="Remove SS-31">&times;</button></td>
+            </tr>
+          </tbody>
+        </table>
 
-  <!-- ===== CTA band ===== -->
-  <section class="quality">
-    <div class="container quality__grid">
-      <div>
-        <span class="eyebrow">Work With Us</span>
-        <h2>Ready to Research<br><span class="accent">With Confidence?</span></h2>
-        <p>Browse the catalog or reach out about a custom synthesis request — we typically respond within one business day.</p>
-        <div class="quality__cta"><a href="shop.html" class="btn btn--light">Browse Catalog</a><a href="contact.html" class="btn btn--outline">Contact Us</a></div>
-      </div>
-      <div class="stats-grid">
-        <div class="stat-box"><div class="num">99%+</div><div class="lbl">Average Purity</div></div>
-        <div class="stat-box"><div class="num">50+</div><div class="lbl">Active Peptides</div></div>
-        <div class="stat-box"><div class="num">100%</div><div class="lbl">COA Verified</div></div>
-        <div class="stat-box"><div class="num">24h</div><div class="lbl">Max Ship Time</div></div>
+        <!-- Summary -->
+        <aside class="cart-summary">
+          <h3>Cart Totals</h3>
+          <div class="line"><span>Subtotal</span><span>$195.00</span></div>
+          <div class="line"><span>Shipping</span><span>Free (over $150)</span></div>
+          <div class="line"><span>Estimated Tax</span><span>$25.35</span></div>
+          <div class="line total"><span>Total</span><span>$220.35</span></div>
+          <a href="#" class="btn btn--primary">Proceed to Checkout &rarr;</a>
+          <div class="cart-promo">
+            <input type="text" placeholder="Promo code" aria-label="Promo code" />
+            <button class="btn btn--outline-dark btn--sm">Apply</button>
+          </div>
+          <p class="account-meta" style="margin-top:16px;text-align:center"><a href="shop.html" style="color:var(--blue-mid);font-weight:600">&larr; Continue shopping</a></p>
+        </aside>
       </div>
     </div>
   </section>

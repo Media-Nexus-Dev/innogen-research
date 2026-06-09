@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Healing &amp; Recovery — Innogen Research</title>
+  <title>My Account — Innogen Research</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260604" />
+  <link rel="stylesheet" href="styles.css?v=20260606b" />
 </head>
 <body>
 
@@ -38,40 +38,50 @@
   <!-- ===== Page hero ===== -->
   <header class="page-hero">
     <div class="container">
-      <nav class="hero-breadcrumb"><a href="index.html">Home</a> <span>/</span> <a href="category.html">Category</a> <span>/</span> Healing</nav>
-      <h1>Healing &amp; Recovery</h1>
-      <p>Peptides researched for tissue repair, regeneration, and recovery support — each backed by a third-party Certificate of Analysis.</p>
+      <div class="hero-breadcrumb"><a href="index.html">Home</a><span>/</span>My Account</div>
+      <span class="eyebrow" style="color:var(--blue-accent)">Account Portal</span>
+      <h1>My Account</h1>
+      <p>Sign in to view your orders, download Certificates of Analysis, and manage your details.</p>
     </div>
   </header>
 
-  <!-- ===== Products in category ===== -->
+  <!-- ===== Login / Register ===== -->
   <section class="section section--light">
     <div class="container">
-      <div class="products-grid">
-        <article class="product-card">
-          <a href="product.html" class="product-card__img"><img src="https://innogenresearch.ca/wp-content/uploads/elementor/thumbs/KPV-IR-rlr8opust6bs0v7stsms0jlj6bd58a0w491su0o8eg.jpeg" alt="KPV - IR" /></a>
-          <div class="product-card__body">
-            <span class="product-card__cat">Healing, Immune Peptide</span>
-            <div class="product-card__row"><a href="product.html" class="product-card__name">KPV</a><span class="product-card__price">$65.00 &ndash; $90.00</span></div>
-            <div class="product-card__actions"><a href="#" class="btn btn--primary btn--sm">Select options</a><a href="product.html" class="btn--text">View Product &rarr;</a></div>
-          </div>
-        </article>
-        <article class="product-card">
-          <a href="product.html" class="product-card__img"><img src="https://innogenresearch.ca/wp-content/uploads/2026/06/Serene-Pharmaceutical-Vial-in-Minimal-Design.jpg" alt="KLOW" /></a>
-          <div class="product-card__body">
-            <span class="product-card__cat">Peptide Blend</span>
-            <div class="product-card__row"><a href="product.html" class="product-card__name">KLOW</a><span class="product-card__price">$270.00</span></div>
-            <div class="product-card__actions"><a href="#" class="btn btn--primary btn--sm">Add to cart</a><a href="product.html" class="btn--text">View Product &rarr;</a></div>
-          </div>
-        </article>
-        <article class="product-card">
-          <a href="product.html" class="product-card__img"><img src="https://innogenresearch.ca/wp-content/uploads/2026/06/Serene-Pharmaceutical-Vial-in-Minimal-Design.jpg" alt="GLOW" /></a>
-          <div class="product-card__body">
-            <span class="product-card__cat">Peptide Blend</span>
-            <div class="product-card__row"><a href="product.html" class="product-card__name">GLOW</a><span class="product-card__price">$225.00</span></div>
-            <div class="product-card__actions"><a href="#" class="btn btn--primary btn--sm">Add to cart</a><a href="product.html" class="btn--text">View Product &rarr;</a></div>
-          </div>
-        </article>
+      <div class="account-grid">
+        <!-- Login -->
+        <div class="account-card">
+          <h2>Login</h2>
+          <p>Welcome back. Enter your details to access your account.</p>
+          <form class="account-form" onsubmit="return false;">
+            <label>Username or email address <span style="color:#c0392b">*</span>
+              <input type="text" autocomplete="username" />
+            </label>
+            <label>Password <span style="color:#c0392b">*</span>
+              <input type="password" autocomplete="current-password" />
+            </label>
+            <div class="row-between">
+              <label><input type="checkbox" style="width:16px;height:16px;accent-color:var(--blue-primary)" /> Remember me</label>
+              <a href="#">Lost your password?</a>
+            </div>
+            <button class="btn btn--primary">Log In &rarr;</button>
+          </form>
+        </div>
+        <!-- Register -->
+        <div class="account-card">
+          <h2>Register</h2>
+          <p>Create an account to track orders and access batch documentation.</p>
+          <form class="account-form" onsubmit="return false;">
+            <label>Email address <span style="color:#c0392b">*</span>
+              <input type="email" autocomplete="email" />
+            </label>
+            <label>Password <span style="color:#c0392b">*</span>
+              <input type="password" autocomplete="new-password" />
+            </label>
+            <p class="account-meta">By registering you confirm you are a qualified researcher purchasing for laboratory research use only.</p>
+            <button class="btn btn--primary">Create Account &rarr;</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -95,12 +105,15 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <a href="index.html" class="brand"><img src="https://innogenresearch.ca/wp-content/uploads/2026/05/innogen-logo-white-1-1.png" alt="Innogen Peptides" class="brand__logo" style="height:40px;width:auto;display:block" /></a>
+          <a href="index.html" class="brand">
+            <span class="brand__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#4cb8e0" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="3.5" r="1.6"/><circle cx="12" cy="20.5" r="1.6"/><circle cx="4.5" cy="7.7" r="1.6"/><circle cx="19.5" cy="7.7" r="1.6"/><circle cx="4.5" cy="16.3" r="1.6"/><circle cx="19.5" cy="16.3" r="1.6"/></svg></span>
+            <span class="brand__text"><strong>INNOGEN</strong><span>Peptides</span></span>
+          </a>
           <p>Canada's premier source for pharmaceutical-grade research peptides. Purity you can measure. Quality you can trust.</p>
           <div class="contact">&#9993; info@innogenresearch.ca<br>&#9742; +1 (123) 456-7890<br>&#9873; Canada — Nationwide Shipping</div>
         </div>
         <div class="footer__col"><h4>Top Products</h4><ul><li><a href="shop.html">SNAP-8</a></li><li><a href="shop.html">SS-31</a></li><li><a href="shop.html">KPV</a></li><li><a href="shop.html">Tirzepatide</a></li><li><a href="shop.html">KLOW</a></li><li><a href="shop.html">GLOW</a></li><li><a href="shop.html">View All</a></li></ul></div>
-        <div class="footer__col"><h4>Quick Links</h4><ul><li><a href="about.html">About Innogen</a></li><li><a href="#">Quality Assurance</a></li><li><a href="index.html#process">Research Process</a></li><li><a href="shop.html">COA Library</a></li><li><a href="#">Blog &amp; Research</a></li><li><a href="about.html#contact">Contact Us</a></li></ul></div>
+        <div class="footer__col"><h4>Quick Links</h4><ul><li><a href="about.html">About Innogen</a></li><li><a href="#">Quality Assurance</a></li><li><a href="index.html#process">Research Process</a></li><li><a href="shop.html">COA Library</a></li><li><a href="#">Blog &amp; Research</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
         <div class="footer__disclaimer"><h4>Research Disclaimer</h4><div class="box">All products sold by Innogen Research are intended for laboratory research use only. They are not for human consumption, diagnostic, or therapeutic applications. By purchasing, you confirm you are a qualified researcher and will use products in compliance with all applicable regulations.</div></div>
       </div>
       <div class="footer__bottom">
